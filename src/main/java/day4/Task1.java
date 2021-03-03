@@ -31,14 +31,17 @@ public class Task1 {
             }
             if (j % 2 == 0) {
                 countEven++;
-            }
-            if (j % 2 != 0) {
+            } else {
+           // if (j % 2 != 0) {
                 countUneven++;
             }
+            if (arrayNumbers[j] == 1){
+                countEquals1++;
+            }
         }
-        for (int i : arrayNumbers) {
-            sum += i;
-        }
+//        for (int i : arrayNumbers) {
+//            sum += i;
+//        }
 
         System.out.println("Информация о массиве:");
         System.out.println("Длина массива: " + number);
