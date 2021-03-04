@@ -1,4 +1,4 @@
-package day5;
+package day6;
 
 public class Car {
 
@@ -30,15 +30,14 @@ public class Car {
         }
     }
 
-    public int getYear() {
-        return year;
+    public void info() {
+        System.out.println("Это автомобиль");
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public String getModel() {
-        return model;
+    public int yearDifference(int inputYear) {
+        if (inputYear < year) {
+            System.out.println("Текущая дата меньше года выпуска, проверьте введенный год.");
+        }
+        return Math.abs(inputYear - year);
     }
 }

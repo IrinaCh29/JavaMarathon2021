@@ -1,10 +1,9 @@
-package day5;
+package day6;
 
 public class Motorbike {
     private int year;
     private String color;
     private String model;
-
 
     public Motorbike(int year, String color, String model) {
         if (year <= 0) {
@@ -24,15 +23,14 @@ public class Motorbike {
         }
     }
 
-    public int getYear() {
-        return year;
+    public void info() {
+        System.out.println("Это мотоцикл");
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public String getModel() {
-        return model;
+    public int yearDifference(int inputYear) {
+        if (inputYear < year) {
+            System.out.println("Текущая дата меньше года выпуска, проверьте введенный год.");
+        }
+        return Math.abs(inputYear - year);
     }
 }
