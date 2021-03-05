@@ -42,7 +42,7 @@ public class Teacher {
                 mark = "отлично";
                 break;
             default:
-                mark = "нет оценки";
+                mark = "хорошо";
                 break;
         }
 
