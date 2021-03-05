@@ -35,9 +35,6 @@ public class Car {
     }
 
     public int yearDifference(int inputYear) {
-        if (inputYear < year) {
-            System.out.println("Текущая дата меньше года выпуска, проверьте введенный год.");
-        }
         return Math.abs(inputYear - year);
     }
 }
