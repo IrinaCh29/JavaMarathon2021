@@ -35,9 +35,9 @@ public class Teacher {
             case 3:
                 mark = "удовлетворительно";
                 break;
-            case 4:
-                mark = "хорошо";
-                break;
+//            case 4:  // является дефолтом, отключено
+//                mark = "хорошо";
+//                break;
             case 5:
                 mark = "отлично";
                 break;
