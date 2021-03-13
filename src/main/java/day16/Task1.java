@@ -21,12 +21,15 @@ public class Task1 {
             String[] number = scanner.nextLine().split(" ");
 
             double[] integer = new double[number.length];
-            for (int i = 0; i < integer.length; i++) {
-                integer[i] = Double.parseDouble(number[i]);
+            for (String numbers : number) {
+                sum += Double.parseDouble(numbers);
             }
-            for (double i : integer) {
-                sum += i;
-            }
+//            for (int i = 0; i < integer.length; i++) {
+//                integer[i] = Double.parseDouble(number[i]);
+//            }
+//            for (double i : integer) {
+//                sum += i;
+//            }
 
             middle = (double) sum / integer.length;
 
