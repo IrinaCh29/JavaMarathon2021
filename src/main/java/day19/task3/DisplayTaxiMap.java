@@ -89,5 +89,4 @@ public class DisplayTaxiMap extends Application {
             getChildren().add(rectangle);
         }
     }
-
 }
